@@ -1,1 +1,205 @@
 // Specific CSS for your home-page
+.first-page-container {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 35px 0;
+
+}
+
+.photo-hugo {
+  background-image: url("HugoMainImg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  text-align: center;
+  border-radius: 0 15px 15px 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.words-hugo {
+  width: 40%;
+  position: absolute;
+  font-size: 2em;
+  text-align: right;
+  right: 10%;
+
+}
+
+.projects-pro-container{
+  display: flex;
+  margin: 50px;
+  padding-left: 30px;
+
+}
+
+.projects-text {
+  margin: 30px;
+  width: 30vw;
+  margin: 0px;
+}
+
+
+.projects-cards   {
+  display: flex;
+  justify-content: center;
+  width: 70vw;
+  margin: 5px 0;
+  align-items: center;
+}
+
+.project-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 23px;
+
+  width: 280px;
+  height: 410px;
+
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 15px;
+
+  h3 {
+    margin: 0px 8px;
+  }
+
+  p {
+    margin: 0px 8px;
+  }
+}
+
+
+.card-secondhalf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .fa-github{
+    font-size: 25px;
+    color: black;
+  }
+
+}
+
+
+.card-photo {
+  width: 250px;
+  height: 150px;
+  border: solid 1px black;
+}
+
+.card-miscelanous {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 3px;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+.projects-perso-container{
+  display: flex;
+  justify-content: end;
+  margin: 50px;
+  padding-right: 30px;
+
+  .projects-text {
+    text-align: right;
+  }
+}
+
+
+.cv-page-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+
+
+  .photo-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    background-color: #000000;
+
+    .photo {
+      width: 100%;
+      height: 60%;
+      background-image: url("HugoCVImg.png");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 40%;
+      width: 100%;
+      background-color: #000000;
+
+      .contacts-icons {
+        display: flex;
+        font-size: 30px;
+        color: #FFFFFF;
+        border-bottom: solid 1px #FFFFFF;
+        justify-content: space-around;
+        align-items: center;
+        width: 30%;
+        padding: 30px;
+      }
+
+      .contacts-text {
+        font-size: 20px;
+        color: #FFFFFF;
+        margin: 20px;
+        }
+
+    }
+  }
+
+  .cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+    background-color: #FFFFFF;
+
+
+    .cv-title {
+      margin: 40px;
+      font-weight: bold;
+    }
+
+    .cv-text {
+      margin: 40px;
+    }
+  }
+
+}
