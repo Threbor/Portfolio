@@ -1,0 +1,32 @@
+<div class="banner_project" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @project.photo %>);">
+  <div class="container_project">
+    <h1><%= @project.name %></h1>
+  </div>
+</div>
+
+<div class="details_project">
+  <div class="links_projects">
+    <%= link_to @project.repo_url, target: "_blank" do %>
+      <i class="fa-brands fa-github icon_project"></i>
+    <% end %>
+    <%= link_to @project.app_link, target: "_blank" do %>
+      <p>L'app</p>
+    <% end %>
+  </div>
+  <div class="description_enhanced_project">
+    <p><%= @project.description_enhanced %></p>
+  </div>
+  <div class="key_features_project">
+  <h3>Les fonctionnalités clés :</h3>
+    <ul>
+      <% @project.key_features.each do |key_feature| %>
+        <li><%= key_feature %></li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="used_techs_project">
+    <% @project.used_techs.each do |used_tech| %>
+      <p><%= used_tech %></p>
+    <% end %>
+  </div>
+</div>

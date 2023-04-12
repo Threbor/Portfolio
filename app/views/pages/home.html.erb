@@ -1,8 +1,10 @@
+
 <div class="first-page-container">
   <div class="photo-hugo">
+    <div class="photo-hugo_peel_off"></div>
   </div>
   <div class="words-hugo">
-  <h1>Ensemble, soyez certain de réaliser vos projets.</h1>
+  <h1>Ensemble, concrétisez vos visions et réussissez vos projets.</h1>
   <h4>Hugo ROBERT</h4>
   </div>
 </div>
@@ -11,56 +13,63 @@
   <div class="projects-pro-container">
     <div class="projects-text">
       <h2>Projets professionnels</h2>
-      <p>ce furent des projets très intéressantsce furent des projets très intéressantsce furent des projets très intéressantsce furent des projets très intéressants</p>
-    </div>
+      <p>Découvrez mon parcours jalonné de projets captivants et enrichissants, où j'ai pu mettre en œuvre mon expertise pour aider mes clients à réaliser leurs ambitions.</p>    </div>
     <div class="projects-cards">
-      <div class="project-card">
-        <div class="card-firsthalf">
-          <h3>Swappy, exceptions</h3>
-          <p>trouver des activités à faire à plusieurs</p>
-        </div>
-        <div class="card-secondhalf">
-          <div class="card-icon">
-            <i class="fa-brands fa-github"></i>
+      <% @proprojects.each do |proproject| %>
+        <%= link_to project_path(proproject) do %>
+          <div class="project-card">
+            <div class="card-firsthalf">
+              <h3><%= proproject.name %></h3>
+              <p><%= proproject.description %></p>
+            </div>
+            <div class="card-secondhalf">
+              <div class="card-icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="card-photo" style="background-image: url(<%= proproject.photo %>);">
+              </div>
+              <div class="card-miscelanous">
+                <p><%= proproject.date %></p>
+                <p><%= proproject.importance %>/<%= @proprojects.count %></p>
+              </div>
+            </div>
           </div>
-          <div class="card-photo">
-          </div>
-          <div class="card-miscelanous">
-            <p>2023</p>
-            <p>1/4</p>
-          </div>
-        </div>
-      </div>
+        <% end %>
+      <% end %>
     </div>
   </div>
 
   <div class="projects-perso-container">
     <div class="projects-cards">
-      <div class="project-card">
-        <div class="card-firsthalf">
-          <h3>fragments, culture off on, task manager, Chat gpt personna</h3>
-          <p>description du projetdescription du projetdescription du projet de fond en compl</p>
-        </div>
-        <div class="card-secondhalf">
-          <div class="card-icon">
-            <i class="fa-brands fa-github"></i>
+      <% @persoprojects.each do |persoproject| %>
+        <%= link_to project_path(persoproject) do %>
+          <div class="project-card">
+            <div class="card-firsthalf">
+              <h3><%= persoproject.name %></h3>
+              <p><%= persoproject.description %></p>
+            </div>
+            <div class="card-secondhalf">
+              <div class="card-icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="card-photo">
+              </div>
+              <div class="card-miscelanous">
+                <p><%= persoproject.date %></p>
+                <p><%= persoproject.importance %>/<%= @persoprojects.count %></p>
+              </div>
+            </div>
           </div>
-          <div class="card-photo">
-          </div>
-          <div class="card-miscelanous">
-            <p>2023</p>
-            <p>1/4</p>
-          </div>
-        </div>
-      </div>
+        <% end %>
+      <% end %>
     </div>
     <div class="projects-text">
       <h2>Projets Personnels</h2>
-      <p>Ces projets ont vocaiton à m'entrainer et de développer mes compétences pour en faire d'avantage et faire preuve d'une grande subtilité et d'évoluer dans différents doamines du code</p>
+      <p>Mes projets personnels reflètent mon engagement à développer constamment mes compétences, explorer de nouveaux domaines du code et repousser les limites de ma créativité pour offrir des solutions toujours plus innovantes et efficaces.</p>    </div>
     </div>
   </div>
-
 </div>
+
 
 <div class="cv-page-container">
   <div class="photo-contacts">
@@ -68,27 +77,81 @@
     </div>
     <div class="contacts">
       <div class="contacts-icons">
-      <i class="fa-brands fa-github"></i>
-      <i class="fa-brands fa-linkedin-in"></i>
+      <%= link_to "https://github.com/Threbor", target:"_blank" do %>
+        <i class="fa-brands fa-github"></i>
+      <% end %>
+      <%= link_to "https://www.linkedin.com/in/hugo-robert-devfullstack", target:"_blank" do %>
+        <i class="fa-brands fa-linkedin-in"></i>
+      <% end %>
       </div>
       <div class="contacts-text">
-      <h3>Contactez-moi</h3>
-      <p>PArlez moi de votre projet , décrivez moi vos besoins, eyt je vous contacterai dans les plus brefs délais PArlez moi de votre projet , décrivez moi vos besoins, eyt je vous contacterai dans les plus brefs délais </p>
+        <h3>Contactez-moi dès maintenant</h3>
+        <p>Confiez-moi vos idées et besoins, et concrétisons ensemble votre vision. Bénéficiez d'un accompagnement personnalisé et de solutions sur-mesure. Contactez-moi, et discutons rapidement de la manière dont je peux vous aider.</p>
       </div>
     </div>
   </div>
   <div class="cv">
-    <div class="cv-title">
-      <h1>Développeur Full-Stack</h1>
-      <h2>Ruby on Rails</h2>
-    </div>
-    <div class="cv-text">
-      <h4>text en gras</h4>
-      <ul>
-        <li>Descriptions de mes activités et réussites</li>
-        <li>Descriptions de mes activités et réussites</li>
-        <li>Descriptions de mes activités et réussites</li>
-      </ul>
+    <div class="containter_cv">
+      <div class="cv-title">
+        <h1>Développeur Full-Stack</h1>
+        <h2>Ruby on Rails</h2>
+      </div>
+      <div class="cv-text">
+        <h4>Boot camp Le Wagon</h4>
+        <h6>Janv 2023 - Mars 2023 - 9 semaines, Nantes</h6>
+        <ul>
+          <li>Pratique des langages Ruby, HTML, CSS, JavaScript</li>
+          <li>Réalisations des Projets des applications Swappy et Exceptions sur le Framework Rails</li>
+          <li>Gestion des bases de données avec MySQL, PostgreSQL</li>
+          <li>Conception création de l'applicaitpon Swappy</li>
+          <li>Conception création du sit web Exeptions</li>
+        </ul>
+      </div>
+      <div class="cv-text">
+        <h3>Expériences Juridiques</h3>
+        <h4>Appui à l’animation territoriale sur les politiques publiques de l’Etat (en alternance)</h4>
+        <h5>Préfecture de Loire-Atlantique - Pole politiques publiques</h5>
+        <h6>Oct 2021 - Sep 2022 - 11 mois, Nantes</h6>
+        <ul>
+          <li>Expertise et conseils juridiques, suivi des politiques publique et soutient à l’organisation.</li>
+        </ul>
+      </div>
+      <div class="cv-text">
+        <h4>Chargé de mission, Ressources, Dettes et Trésorerie</h4>
+        <h5>Région Normandie - Direction des finances et de l’appui au pilotage</h5>
+        <h6>Avr 2021 - Sep 2022 - 6 mois (2 mois en stage 4 en CDD), Rouen</h6>
+        <ul>
+          <li>Elaboration de plans prévisionnels de trésorerie, suivi des recettes de la Région, préparation budgétaire (2Mds€).</li>
+        </ul>
+      </div>
+      <div class="cv-text">
+        <h3>Expériences associatives</h3>
+        <h4>Sauveteur en mer (SNSM)</h4>
+        <h6>2017 -  2020 - 3 ans</h6>
+        <ul>
+          <li>Saisons et interventions bénévoles.</li>
+        </ul>
+      </div>
+      <div class="cv-text">
+        <h4>Culture off/on, président et co-fondateur</h4>
+        <h6>2019 -  2023 - 4 ans</h6>
+        <ul>
+          <li>Réunions hebdomadaires et débats sur des sujets culturels.</li>
+          <li>Récoltes d'expériences personnelles culturelles</li>
+        </ul>
+      </div>
+      <div class="cv-text">
+        <h3>Education</h3>
+        <h4>Master 2 Droit Public - Droit des Collectivités territoriales (en alternance)</h4>
+        <h5>Nantes Université</h5>
+        <h6>2021 - 2022, Nantes</h6>
+      </div>
+      <div class="cv-text">
+        <h4>Master 1 Droit Public - Carrières et Management Public</h4>
+        <h5>Institut de Préparation à l’Adminstration Générale de Nantes</h5>
+        <h6>2020 - 2021, Nantes</h6>
+      </div>
     </div>
   </div>
 </div>
+<script src="peel_off.js"></script>
