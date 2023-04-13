@@ -1,5 +1,16 @@
-<div class="banner_project" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @project.photo %>);">
+
+<div class="banner_project" id="top" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @project.photo %>);">
   <div class="container_project">
+  <% case @project.adjectiv %>
+  <% when 'pro' %>
+    <%= link_to "#{root_path}#projects_pro", class:"banner_project_icon"  do %>
+      <i class="fa-solid fa-circle-arrow-left"></i>
+    <% end %>
+  <% when 'perso' %>
+      <%= link_to "#{root_path}#projects_perso", class:"banner_project_icon" do %>
+      <i class="fa-solid fa-circle-arrow-left"></i>
+    <% end %>
+  <% end %>
     <h1><%= @project.name %></h1>
   </div>
 </div>
@@ -24,9 +35,13 @@
       <% end %>
     </ul>
   </div>
-  <div class="used_techs_project">
-    <% @project.used_techs.each do |used_tech| %>
-      <p><%= used_tech %></p>
-    <% end %>
+
+  <h3>Les technologies utilisées :</h3>
+  <div class="cards_tech">
+      <% @project.technologies.each do |technology| %>
+        <div class="card-category_tech" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%=technology.photo%>)">
+          <%= technology.name %>
+        </div>
+      <% end %>
   </div>
 </div>

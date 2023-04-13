@@ -5,6 +5,22 @@
   position: relative;
 }
 
+
+.banner_project_icon {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 10%;
+  top: 40%;
+  width: 40px;
+  height: 40px;
+}
+
 .banner_project h1 {
   margin: 0;
   color: white;
@@ -27,11 +43,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding: 25px;
     width: 100%;
 
     .icon_project {
-      font-size: 30px;
+      font-size: 40px;
 
     }
 
@@ -47,4 +63,45 @@
 
   }
 
+}
+
+.cards_tech {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin-bottom: 20px;
+}
+
+.card-category_tech {
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+
+@media (min-width: 100px) {
+  .cards_tech {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 850px) {
+  .cards_tech {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1150px) {
+  .cards_tech {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 }

@@ -4,19 +4,19 @@
     <div class="photo-hugo_peel_off"></div>
   </div>
   <div class="words-hugo">
-  <h1>Ensemble, concrétisez vos visions et réussissez vos projets.</h1>
+  <h1>Ensemble, <br> concrétisez vos visions, <br>réussissez vos projets.</h1>
   <h4>Hugo ROBERT</h4>
   </div>
 </div>
 
 <div class="projects-page-container">
-  <div class="projects-pro-container">
-    <div class="projects-text">
+  <div class="projects-pro-container" id="projects_pro">
+    <div class="projects-text" >
       <h2>Projets professionnels</h2>
       <p>Découvrez mon parcours jalonné de projets captivants et enrichissants, où j'ai pu mettre en œuvre mon expertise pour aider mes clients à réaliser leurs ambitions.</p>    </div>
     <div class="projects-cards">
       <% @proprojects.each do |proproject| %>
-        <%= link_to project_path(proproject) do %>
+        <%= link_to "#{project_path(proproject)}#top" do %>
           <div class="project-card">
             <div class="card-firsthalf">
               <h3><%= proproject.name %></h3>
@@ -39,10 +39,10 @@
     </div>
   </div>
 
-  <div class="projects-perso-container">
+  <div class="projects-perso-container" id="projects_perso">
     <div class="projects-cards">
       <% @persoprojects.each do |persoproject| %>
-        <%= link_to project_path(persoproject) do %>
+        <%= link_to "#{project_path(persoproject)}#top" do %>
           <div class="project-card">
             <div class="card-firsthalf">
               <h3><%= persoproject.name %></h3>
@@ -52,7 +52,7 @@
               <div class="card-icon">
                 <i class="fa-brands fa-github"></i>
               </div>
-              <div class="card-photo">
+              <div class="card-photo" style="background-image: url(<%= persoproject.photo %>);">
               </div>
               <div class="card-miscelanous">
                 <p><%= persoproject.date %></p>
@@ -85,7 +85,7 @@
       <% end %>
       </div>
       <div class="contacts-text">
-        <h3>Contactez-moi dès maintenant</h3>
+        <h3><i class="fa-solid fa-envelope-open-text"></i> Contactez-moi dès maintenant </h3>
         <p>Confiez-moi vos idées et besoins, et concrétisons ensemble votre vision. Bénéficiez d'un accompagnement personnalisé et de solutions sur-mesure. Contactez-moi, et discutons rapidement de la manière dont je peux vous aider.</p>
       </div>
     </div>
@@ -101,7 +101,7 @@
         <h6>Janv 2023 - Mars 2023 - 9 semaines, Nantes</h6>
         <ul>
           <li>Pratique des langages Ruby, HTML, CSS, JavaScript</li>
-          <li>Réalisations des Projets des applications Swappy et Exceptions sur le Framework Rails</li>
+          <li>Réalisations des Projets des applications Swappy et Exeptions sur le Framework Rails</li>
           <li>Gestion des bases de données avec MySQL, PostgreSQL</li>
           <li>Conception création de l'applicaitpon Swappy</li>
           <li>Conception création du sit web Exeptions</li>
