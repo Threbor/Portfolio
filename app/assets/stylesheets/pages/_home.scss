@@ -23,8 +23,33 @@
   text-align: center;
   border-radius: 0 15px 15px 0;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.photo-hugo_peel_off {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffe9ba;
+  transform-origin: right;
+
+  animation: slideout 4s;
+  transform: scaleX(0) scaleY(1);
 
 }
+
+@keyframes slideout {
+  from {
+    transform: scaleX(1) scaleY(1);
+  }
+  50% {
+    transform: scaleX(1) scaleY(1);
+  }
+  to {
+    transform: scaleX(0) scaleY(1);
+  }
+}
+
 
 .words-hugo {
   width: 40%;
@@ -32,53 +57,92 @@
   font-size: 2em;
   text-align: right;
   right: 10%;
-
+  opacity: 1;
+  animation: appear 3s, circular 10s linear infinite;
 }
+
+@keyframes circular {
+  0% {
+    transform: rotate(360deg) translate(10px) rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0deg) translate(10px) rotate(0deg);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    display: none;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 
 .projects-pro-container{
   display: flex;
   margin: 50px;
+  margin-bottom: 20px;
   padding-left: 30px;
 
 }
 
 .projects-text {
   margin: 30px;
-  width: 30vw;
+  width: 23vw;
   margin: 0px;
 }
 
 
 .projects-cards   {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   width: 70vw;
   margin: 5px 0;
-  align-items: center;
+  align-items: left;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  overflow-x: scroll;
+
 }
 
 .project-card{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   padding: 10px;
-  gap: 23px;
+  margin: 23px;
 
   width: 280px;
   height: 410px;
 
   background: #FFFFFF;
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
   border-radius: 15px;
+  transition: 0.3s;
 
   h3 {
-    margin: 0px 8px;
+    padding: 0px 8px;
   }
 
   p {
-    margin: 0px 8px;
+    padding: 0px 8px;
   }
+
+  &:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid #ffffff;
+
+  }
+
 }
 
 
@@ -100,6 +164,8 @@
   width: 250px;
   height: 150px;
   border: solid 1px black;
+  background-size: cover;
+  background-position: center;
 }
 
 .card-miscelanous {
@@ -108,10 +174,13 @@
   align-items: center;
   width: 100%;
   margin-top: 3px;
+  padding: 0px 3px;
+
 
   p {
-    margin: 0;
-    padding: 0;
+    font-size: 12px;
+    margin: 0px 0px;
+    padding: 0px 0px;
   }
 }
 
@@ -121,6 +190,8 @@
   justify-content: end;
   margin: 50px;
   padding-right: 30px;
+  margin-top: 20px;
+
 
   .projects-text {
     text-align: right;
@@ -152,6 +223,7 @@
       background-image: url("HugoCVImg.png");
       background-size: cover;
       background-position: center;
+
     }
 
     .contacts {
@@ -171,15 +243,27 @@
         justify-content: space-around;
         align-items: center;
         width: 30%;
-        padding: 30px;
+        padding: 10px;
+
+        i {
+          font-size: 40px;
+        }
+
+        a {
+          text-decoration: none;
+          color: #FFFFFF;
+        }
       }
 
       .contacts-text {
         font-size: 20px;
         color: #FFFFFF;
-        margin: 20px;
-        }
+        margin: 10px;
 
+        h3 {
+          text-align: center;
+        }
+      }
     }
   }
 
@@ -191,15 +275,21 @@
     width: 60%;
     background-color: #FFFFFF;
 
+    .containter_cv {
+      width: 70%;
+      overflow: auto;
 
-    .cv-title {
-      margin: 40px;
-      font-weight: bold;
+      .cv-title {
+        margin: 40px;
+        font-weight: bold;
+      }
+
+      .cv-text {
+        margin: 40px;
+      }
+
     }
 
-    .cv-text {
-      margin: 40px;
-    }
   }
 
 }

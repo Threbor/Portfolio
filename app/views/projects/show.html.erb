@@ -1,0 +1,47 @@
+
+<div class="banner_project" id="top" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @project.photo %>);">
+  <div class="container_project">
+  <% case @project.adjectiv %>
+  <% when 'pro' %>
+    <%= link_to "#{root_path}#projects_pro", class:"banner_project_icon"  do %>
+      <i class="fa-solid fa-circle-arrow-left"></i>
+    <% end %>
+  <% when 'perso' %>
+      <%= link_to "#{root_path}#projects_perso", class:"banner_project_icon" do %>
+      <i class="fa-solid fa-circle-arrow-left"></i>
+    <% end %>
+  <% end %>
+    <h1><%= @project.name %></h1>
+  </div>
+</div>
+
+<div class="details_project">
+  <div class="links_projects">
+    <%= link_to @project.repo_url, target: "_blank" do %>
+      <i class="fa-brands fa-github icon_project"></i>
+    <% end %>
+    <%= link_to @project.app_link, target: "_blank" do %>
+      <p>L'app</p>
+    <% end %>
+  </div>
+  <div class="description_enhanced_project">
+    <p><%= @project.description_enhanced %></p>
+  </div>
+  <div class="key_features_project">
+  <h3>Les fonctionnalités clés :</h3>
+    <ul>
+      <% @project.key_features.each do |key_feature| %>
+        <li><%= key_feature %></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <h3>Les technologies utilisées :</h3>
+  <div class="cards_tech">
+      <% @project.technologies.each do |technology| %>
+        <div class="card-category_tech" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%=technology.photo%>)">
+          <%= technology.name %>
+        </div>
+      <% end %>
+  </div>
+</div>
