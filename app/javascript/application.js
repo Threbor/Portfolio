@@ -2,4 +2,4 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 import "bootstrap"
-import "peel_off"
+import "./peel_off"
