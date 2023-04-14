@@ -17,7 +17,7 @@
     <div class="projects-cards">
       <% @proprojects.each do |proproject| %>
         <%= link_to "#{project_path(proproject)}#top" do %>
-          <div class="project-card">
+          <div class="<%= proproject.date > Date.current ? 'project-card project-card_futur' : 'project-card' %>">
             <div class="card-firsthalf">
               <h3><%= proproject.name %></h3>
               <p><%= proproject.description %></p>
@@ -43,7 +43,7 @@
     <div class="projects-cards">
       <% @persoprojects.each do |persoproject| %>
         <%= link_to "#{project_path(persoproject)}#top" do %>
-          <div class="project-card">
+          <div class="<%= persoproject.date > Date.current ? 'project-card project-card_futur' : 'project-card' %>">
             <div class="card-firsthalf">
               <h3><%= persoproject.name %></h3>
               <p><%= persoproject.description %></p>

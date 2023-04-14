@@ -62,10 +62,10 @@ puts(" - done")
 print("Creating project Assembly")
 assembly = Project.create(
   name: "Assembly",
-  description: "Une applicaiton qui aide à raconter des histoires seuls ou à plusieurs, en présentiel ou à distance. Chat GPT est en cours d'implémentaitons",
-  description_enhanced: "En cours d'élaboration",
+  description: "En développement... Une applicaiton qui aide à raconter des histoires seuls ou à plusieurs, en présentiel ou à distance. Chat GPT est en cours d'implémentaitons",
+  description_enhanced: "En développement... ",
   photo: "https://cdn.midjourney.com/8c176d53-127a-41d6-a062-0361bcb652e6/grid_0.png",
-  date: Date.parse("2023-03-17"),
+  date: Date.parse("2023-05-17"),
   importance: 1,
   adjectiv: "perso",
   repo_url: "https://github.com/Threbor/Swappy",
@@ -82,10 +82,10 @@ puts(" - done")
 print("Creating project CultureOffOn Website")
 cultureoffon = Project.create(
   name: "CultureOffOn Website",
-  description: "Un site web associatif qui partage des expériences culturelles et des synthèses de prise de paroles.",
-  description_enhanced: "En cours d'élaboration",
+  description: "En développement... Un site web associatif qui partage des expériences culturelles et des synthèses de prise de paroles.",
+  description_enhanced: "En développement... ",
   photo: "https://cdn.midjourney.com/e6d669ce-26e4-4063-a73e-fc1937d0c28e/grid_0.png",
-  date: Date.parse("2023-03-17"),
+  date: Date.parse("2023-06-17"),
   importance: 2,
   adjectiv: "perso",
   repo_url: "https://github.com/Threbor/Swappy",
@@ -106,10 +106,10 @@ puts(" - done")
 print("Creating project ProgrammPlanner")
 programmplanner = Project.create(
   name: "ProgrammPlanner",
-  description: "Une applicaiton pour trouver des activités locales à faire entre amis",
+  description: "En développement... Une applicaiton pour trouver des activités locales à faire entre amis",
   photo: "https://cdn.midjourney.com/7393568b-276d-4ad6-b951-a7e609be5a41/grid_0.png",
-  description_enhanced: "En cours d'élaboration",
-  date: Date.parse("2023-03-17"),
+  description_enhanced: "En développement... ",
+  date: Date.parse("2023-07-17"),
   importance: 3,
   adjectiv: "perso",
   repo_url: "https://github.com/Threbor/Swappy",
@@ -130,10 +130,10 @@ puts(" - done")
 print("Creating project BooOclock")
 boooclock = Project.create(
   name: "BooOclock",
-  description: "Une applicaiton pour suivre vos lectures favorites et qui vous motive et récompense pour votre implicaiton",
+  description: "En développement... Une applicaiton pour suivre vos lectures favorites et qui vous motive et récompense pour votre implicaiton",
   photo: "https://cdn.midjourney.com/b2793f12-229a-48d6-a70e-bd086970c7ac/grid_0.png",
-  description_enhanced: "En cours d'élaboration",
-  date: Date.parse("2023-03-17"),
+  description_enhanced: "En développement... ",
+  date: Date.parse("2023-08-17"),
   importance: 4,
   adjectiv: "perso",
   repo_url: "https://github.com/Threbor/Swappy",
@@ -150,10 +150,10 @@ puts(" - done")
 print("Creating project ChronoMap")
 chronomap = Project.create(
   name: "Chronomap",
-  description: "Une applicaiton affichant des événements historiques sur une carte et évoluant progressivement en fonction de leur dates",
+  description: "En développement... Une applicaiton affichant des événements historiques sur une carte et évoluant progressivement en fonction de leur dates",
   photo: "https://cdn.midjourney.com/d9ed86e5-04e6-4efe-af07-a4ae123804c6/grid_0.png",
-  description_enhanced: "En cours d'élaboration",
-  date: Date.parse("2023-03-17"),
+  description_enhanced: "En développement... ",
+  date: Date.parse("2023-09-17"),
   importance: 5,
   adjectiv: "perso",
   repo_url: "https://github.com/Threbor/Swappy",
@@ -170,10 +170,10 @@ puts(" - done")
 print("Creating project CarboConso")
 carboconso = Project.create(
   name: "CarboConso",
-  description: "Une applicaiton pour trouver des activités locales à faire entre amis",
+  description: "En développement... Une applicaiton pour trouver des activités locales à faire entre amis",
   photo: "https://cdn.midjourney.com/5d8e0f8f-2c97-49ba-ae90-07043d8b6ab1/grid_0.png",
-  description_enhanced: "En cours d'élaboration",
-  date: Date.parse("2023-03-17"),
+  description_enhanced: "En développement... ",
+  date: Date.parse("2023-10-17"),
   importance: 6,
   adjectiv: "perso",
   repo_url: "https://github.com/Threbor/Swappy",
@@ -191,10 +191,10 @@ puts(" - done")
 print("Creating project RegroupUs")
 regroupus = Project.create(
   name: "RegroupUs",
-  description: "Une applicaiton pour géolocaliser ses groupes d'amis, se coordonner et se retrouver à des points clés",
+  description: "En développement... Une applicaiton pour géolocaliser ses groupes d'amis, se coordonner et se retrouver à des points clés",
   photo: "https://cdn.midjourney.com/5373e6c9-6a3b-4416-9828-f4846ed25b50/grid_0.png",
-  description_enhanced: "En cours d'élaboration",
-  date: Date.parse("2023-03-17"),
+  description_enhanced: "En développement... ",
+  date: Date.parse("2023-11-17"),
   importance: 7,
   adjectiv: "perso",
   repo_url: "https://github.com/Threbor/Swappy",
@@ -212,10 +212,10 @@ puts(" - done")
 print("Creating project EscapeSmart")
 escapesmart = Project.create(
   name: "EscapeSmart",
-  description: "Un escape game à disposition sur un smartphone",
+  description: "En développement... Un escape game à disposition sur un smartphone",
   photo: "https://cdn.midjourney.com/025764bc-032e-4e9c-bbfd-1fc95fba8e6d/grid_0.png",
-  description_enhanced: "En cours d'élaboration",
-  date: Date.parse("2023-03-17"),
+  description_enhanced: "En développement... ",
+  date: Date.parse("2023-12-17"),
   importance: 8,
   adjectiv: "perso",
   repo_url: "https://github.com/Threbor/Swappy",
