@@ -312,7 +312,7 @@
         text-align: center;
 
         i {
-          font-size: 60px;
+          font-size: 40px;
           color: #000000;
           margin-bottom: 40px;
         }
@@ -417,12 +417,17 @@
 
   .cv-page-container {
     flex-direction: column;
-    height: none !important;
+    box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0);
+    background-color: #00000000;
+    height: auto;
 
     .photo-contacts {
       width: 100%;
-      height: 40%;
+      height: 194px;
       flex-direction: row;
+      position: sticky;
+      top: 0px;
+
 
 
       .contacts-icons {
@@ -436,7 +441,6 @@
       }
       .contacts {
         height: 100%;
-        width: none;
 
         .contacts-icons {
           padding: 20px;
@@ -452,9 +456,13 @@
 
     .cv {
       width: 100%;
+      height: auto;
+      background-color: white;
 
       .containter_cv {
         width: 100%;
+        max-width: 550px;
+        overflow: visible;
       }
     }
   }
