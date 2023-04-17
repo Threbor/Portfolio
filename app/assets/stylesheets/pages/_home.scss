@@ -301,11 +301,30 @@
 
       .cv-title {
         margin: 40px;
-        font-weight: bold;
+
+        h1 {
+          font-weight: bold;
+          font-size: 40px;
+          text-decoration: underline;
+        }
+
+        h2 {
+          font-weight: bold;
+          font-size: 30px;
+        }
+
       }
 
       .cv-text {
         margin: 40px;
+
+        h3  {
+          font-weight: bold;
+        }
+
+        h4  {
+          text-decoration: underline;
+        }
       }
 
       .icon-download {
@@ -328,7 +347,7 @@
   .first-page-container {
     flex-direction: column;
     justify-content: space-around;
-    height: 68vh;
+    height: 570px;
     width: 100%;
     margin: 0%;
     background: linear-gradient(0deg, rgba(245,222,179,0) 0%, rgba(245,222,179,1) 100%);
