@@ -40,6 +40,13 @@
   margin: auto;
   padding: 25px;
 
+  h2 {
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    color: #605745;;
+  }
+
   .links_projects {
     display: flex;
     justify-content: space-around;
@@ -49,14 +56,52 @@
 
     .icon_project {
       font-size: 40px;
+      border: solid 1px wheat;
+      border-radius: 100%;
+      padding: 7px;
+      background-color: wheat;
+      box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+
+
+      &:hover {
+        background-color: rgba(245, 222, 179, 0);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+
+      }
 
     }
 
-    p {
+    .app_link {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin: 0;
       padding: 0;
+      border: solid 1px wheat;
+      background-color: wheat;
+      border-radius: 100%;
+      padding: 7px;
+      transition: 0.2s;
+      width: 60px;
+      height: 60px;
+      box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+
+
+      p {
+      margin: 0px 0px;
+      padding: 0px 0px;
+      }
+
+      &:hover {
+        background-color: rgba(245, 222, 179, 0);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+      }
     }
   }
+
+
+
   .used_techs_project {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

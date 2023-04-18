@@ -117,33 +117,6 @@ cultureoffon = Project.create(
 )
 puts(" - done")
 
-print("Creating project ProgrammPlanner")
-programmplanner = Project.create(
-  name: "PlanPerfect",
-  description: "En développement... Un outil pour organiser les activités en fonction des préférences de chacun, idéal pour coordonner des agendas complexes.",
-  description_enhanced: "
-  PlanPerfect est un outil en développement qui vise à faciliter la coordination des agendas complexes en permettant
-  la création et la personnalisation de son propre agenda, le partage d'agenda avec les amis, la centralisation des
-  plannings des amis pour une meilleure visibilité, une interface visuelle intuitive et claire pour une prise en
-  main facile, ainsi que la suggestion d'activités en fonction des préférences et disponibilités. ProgrammPlanner
-  sera une solution pratique pour organiser et planifier des activités en tenant compte des envies de chacun,
-  facilitant ainsi la coordination d'agendas compliqués avec une grande simplicité et efficacité.",
-  key_features: [
-    "Création et personnalisation de son propre agenda",
-    "Partage d'agenda avec les amis pour faciliter la coordination",
-    "Centralisation des plannings des amis pour une meilleure visibilité",
-    "Interface visuelle intuitive et claire pour une prise en main facile",
-    "Suggestion d'activités en fonction des préférences et disponibilités",
-  ],
-  photo: "https://cdn.midjourney.com/7393568b-276d-4ad6-b951-a7e609be5a41/grid_0.png",
-  date: Date.parse("2023-07-17"),
-  importance: 3,
-  adjectiv: "perso",
-  repo_url: "https://github.com/Threbor/Swappy",
-  app_link: "https://www.swappy.site",
-)
-puts(" - done")
-
 print("Creating project BooOclock")
 boooclock = Project.create(
   name: "BookOclock",
@@ -167,122 +140,6 @@ boooclock = Project.create(
   photo: "https://cdn.midjourney.com/b2793f12-229a-48d6-a70e-bd086970c7ac/grid_0.png",
   date: Date.parse("2023-08-17"),
   importance: 4,
-  adjectiv: "perso",
-  repo_url: "https://github.com/Threbor/Swappy",
-  app_link: "https://www.swappy.site",
-)
-puts(" - done")
-
-print("Creating project ChronoMap")
-chronomap = Project.create(
-  name: "Chronomap",
-  description: "En développement... Une application affichant des événements historiques sur une carte et évoluant progressivement en fonction de leurs dates.",
-  description_enhanced: "
-  Chronomap est une application innovante en développement qui permet de visualiser des événements historiques sur une
-  carte interactive, évoluant au fil du temps en fonction de leurs dates. Avec un partenariat avec Wikipédia pour
-  fournir des informations sur les lieux et les dates, l'application offre également la possibilité de créer des
-  parcours personnalisés à partir d'une liste d'événements, ce qui en fait un outil idéal pour enseigner la géographie
-  et l'histoire. En utilisant des fonctionnalités de recherche avancées pour trouver des événements historiques par
-  période, région ou thématique, Chronomap offre une expérience d'apprentissage riche et interactive qui permet de
-  découvrir les événements passés et leur impact sur notre monde d'aujourd'hui.",
-  key_features: [
-    "Visualisation des lieux d'événements historiques sur une carte interactive",
-    "Affichage dynamique et évolutif en fonction du temps et des événements",
-    "Partenariat avec Wikipédia pour fournir des informations sur les lieux et les dates",
-    "Création de parcours personnalisés à partir d'une liste d'événements : idéal pour enseigner la géographie et l'histoire",
-    "Recherche d'événements historiques par période, région ou thématique",
-  ],
-  photo: "https://cdn.midjourney.com/d9ed86e5-04e6-4efe-af07-a4ae123804c6/grid_0.png",
-  date: Date.parse("2023-09-17"),
-  importance: 5,
-  adjectiv: "perso",
-  repo_url: "https://github.com/Threbor/Swappy",
-  app_link: "https://www.swappy.site",
-)
-puts(" - done")
-
-print("Creating project CarboConso")
-carboconso = Project.create(
-  name: "CarboConso",
-  description: "En développement... évalue votre consommation personnelle de carbone et vous conseille sur des actions",
-  description_enhanced: "
-  CarboConso est une application en développement qui a pour but d'analyser et de mesurer votre consommation
-  personnelle de carbone afin de vous fournir des conseils personnalisés pour adopter un mode de vie plus écologique.
-  En utilisant des fonctionnalités telles que le scan de produits pour évaluer leur impact carbone, des estimations
-  de la consommation de carbone liée à la fabrication du produit, ainsi que le suivi et la visualisation de la
-  réduction de votre empreinte carbone, CarboConso vous permettra de faire des choix plus durables et de comparer
-  les produits pour une consommation plus responsable. De plus, vous pourrez partager vos résultats et vos progrès
-  sur les réseaux sociaux pour encourager vos amis et votre famille à se joindre à vous dans votre engagement pour
-  l'environnement.",
-  key_features: [
-    "Scan des produits pour évaluer leur impact carbone",
-    "Estimations de la consommation de carbone liée à la fabrication du produit",
-    "Conseils personnalisés pour adopter un mode de vie plus écologique",
-    "Suivi et visualisation de la réduction de votre empreinte carbone",
-    "Partage des résultats et des progrès sur les réseaux sociaux",
-    "Comparaison des produits pour des choix plus durables",
-  ],
-  photo: "https://cdn.midjourney.com/5d8e0f8f-2c97-49ba-ae90-07043d8b6ab1/grid_0.png",
-  date: Date.parse("2023-10-17"),
-  importance: 6,
-  adjectiv: "perso",
-  repo_url: "https://github.com/Threbor/Swappy",
-  app_link: "https://www.swappy.site",
-)
-puts(" - done")
-
-
-print("Creating project BuddyMap")
-buddymap = Project.create(
-  name: "BuddyMap",
-  description: "En développement... pour coordonner vos sorties et faciliter les retrouvailles lors d'événements.",
-  description_enhanced: "
-  BuddyMap est une application innovante, actuellement en développement, qui révolutionne la manière dont vous
-  géolocalisez et coordonnez vos groupes d'amis lors de sorties, d'événements et de rencontres. Grâce à des
-  fonctionnalités avancées telles que la géolocalisation individuelle et collective, la création de groupes et de
-  sous-groupes colorés, ainsi que la définition de points de rendez-vous, cette plateforme facilite grandement les
-  retrouvailles et l'organisation. De plus, avec des notifications en temps réel sur les mouvements des membres,
-  un chat intégré pour communiquer aisément, et la possibilité de partager vos expériences sur les réseaux sociaux,
-  BuddyMap est l'outil ultime pour profiter pleinement de vos moments entre amis et renforcer les liens sociaux.",
-  key_features: [
-    "Géolocalisation individuelle et collective pour suivre les membres du groupe",
-    "Création de groupes et de sous-groupes basés sur des couleurs pour une organisation optimale",
-    "Définition de points de rendez-vous pour faciliter les retrouvailles",
-    "Notifications en temps réel sur les mouvements des membres du groupe",
-    "Partage de l'expérience et des moments clés sur les réseaux sociaux",
-    "Fonction de chat intégrée pour communiquer avec les membres du groupe",
-  ],
-  photo: "https://cdn.midjourney.com/028564eb-74a7-4904-8e43-175e9703949a/grid_0.png",
-  date: Date.parse("2023-11-17"),
-  importance: 7,
-  adjectiv: "perso",
-  repo_url: "https://github.com/Threbor/Swappy",
-  app_link: "https://www.swappy.site",
-)
-puts(" - done")
-
-
-print("Creating project SmartEscape")
-smartescape = Project.create(
-  name: "SmartEscape",
-  description: "En développement...EscapeSmart vous plonge dans des aventures captivantes à résoudre.",
-  description_enhanced: "
-  En cours de développement, EscapeSmart est un escape game innovant et accessible sur smartphone, conçu pour offrir
-  des expériences immersives, stimulantes et palpitantes à portée de main. Grâce à une combinaison astucieuse de
-  géolocalisation, de jeux de piste et d'énigmes ingénieuses, les utilisateurs pourront se lancer dans des aventures
-  en solo ou en équipe, relever des défis personnalisés et partager leurs réussites sur les réseaux sociaux, le tout
-  pour vivre une expérience de jeu unique et inoubliable.",
-  key_features: [
-    "Jeux d'évasion adaptés pour les smartphones",
-    "Géolocalisation individuelle et collective pour coordonner les équipes",
-    "Création de groupes et de sous-groupes pour des défis personnalisés",
-    "Jeux de piste basés sur la définition de points de rendez-vous et d'énigmes à résoudre",
-    "Classements et récompenses pour les équipes les plus performantes",
-    "Partage des réussites et des moments forts sur les réseaux sociaux",
-  ],
-  photo: "https://cdn.midjourney.com/025764bc-032e-4e9c-bbfd-1fc95fba8e6d/grid_0.png",
-  date: Date.parse("2023-12-17"),
-  importance: 8,
   adjectiv: "perso",
   repo_url: "https://github.com/Threbor/Swappy",
   app_link: "https://www.swappy.site",
@@ -320,6 +177,123 @@ coordiconcert = Project.create(
 )
 puts(" - done")
 
+print("Creating project ChronoMap")
+chronomap = Project.create(
+  name: "Chronomap",
+  description: "En développement... Une application affichant des événements historiques sur une carte et évoluant progressivement en fonction de leurs dates.",
+  description_enhanced: "
+  Chronomap est une application innovante en développement qui permet de visualiser des événements historiques sur une
+  carte interactive, évoluant au fil du temps en fonction de leurs dates. Avec un partenariat avec Wikipédia pour
+  fournir des informations sur les lieux et les dates, l'application offre également la possibilité de créer des
+  parcours personnalisés à partir d'une liste d'événements, ce qui en fait un outil idéal pour enseigner la géographie
+  et l'histoire. En utilisant des fonctionnalités de recherche avancées pour trouver des événements historiques par
+  période, région ou thématique, Chronomap offre une expérience d'apprentissage riche et interactive qui permet de
+  découvrir les événements passés et leur impact sur notre monde d'aujourd'hui.",
+  key_features: [
+    "Visualisation des lieux d'événements historiques sur une carte interactive",
+    "Affichage dynamique et évolutif en fonction du temps et des événements",
+    "Partenariat avec Wikipédia pour fournir des informations sur les lieux et les dates",
+    "Création de parcours personnalisés à partir d'une liste d'événements : idéal pour enseigner la géographie et l'histoire",
+    "Recherche d'événements historiques par période, région ou thématique",
+  ],
+  photo: "https://cdn.midjourney.com/d9ed86e5-04e6-4efe-af07-a4ae123804c6/grid_0.png",
+  date: Date.parse("2023-09-17"),
+  importance: 5,
+  adjectiv: "beta",
+  repo_url: "https://github.com/Threbor/Swappy",
+  app_link: "https://www.swappy.site",
+)
+puts(" - done")
+
+print("Creating project CarboConso")
+carboconso = Project.create(
+  name: "CarboConso",
+  description: "En développement... évalue votre consommation personnelle de carbone et vous conseille sur des actions",
+  description_enhanced: "
+  CarboConso est une application en développement qui a pour but d'analyser et de mesurer votre consommation
+  personnelle de carbone afin de vous fournir des conseils personnalisés pour adopter un mode de vie plus écologique.
+  En utilisant des fonctionnalités telles que le scan de produits pour évaluer leur impact carbone, des estimations
+  de la consommation de carbone liée à la fabrication du produit, ainsi que le suivi et la visualisation de la
+  réduction de votre empreinte carbone, CarboConso vous permettra de faire des choix plus durables et de comparer
+  les produits pour une consommation plus responsable. De plus, vous pourrez partager vos résultats et vos progrès
+  sur les réseaux sociaux pour encourager vos amis et votre famille à se joindre à vous dans votre engagement pour
+  l'environnement.",
+  key_features: [
+    "Scan des produits pour évaluer leur impact carbone",
+    "Estimations de la consommation de carbone liée à la fabrication du produit",
+    "Conseils personnalisés pour adopter un mode de vie plus écologique",
+    "Suivi et visualisation de la réduction de votre empreinte carbone",
+    "Partage des résultats et des progrès sur les réseaux sociaux",
+    "Comparaison des produits pour des choix plus durables",
+  ],
+  photo: "https://cdn.midjourney.com/5d8e0f8f-2c97-49ba-ae90-07043d8b6ab1/grid_0.png",
+  date: Date.parse("2023-10-17"),
+  importance: 6,
+  adjectiv: "beta",
+  repo_url: "https://github.com/Threbor/Swappy",
+  app_link: "https://www.swappy.site",
+)
+puts(" - done")
+
+
+print("Creating project BuddyMap")
+buddymap = Project.create(
+  name: "BuddyMap",
+  description: "En développement... pour coordonner vos sorties et faciliter les retrouvailles lors d'événements.",
+  description_enhanced: "
+  BuddyMap est une application innovante, actuellement en développement, qui révolutionne la manière dont vous
+  géolocalisez et coordonnez vos groupes d'amis lors de sorties, d'événements et de rencontres. Grâce à des
+  fonctionnalités avancées telles que la géolocalisation individuelle et collective, la création de groupes et de
+  sous-groupes colorés, ainsi que la définition de points de rendez-vous, cette plateforme facilite grandement les
+  retrouvailles et l'organisation. De plus, avec des notifications en temps réel sur les mouvements des membres,
+  un chat intégré pour communiquer aisément, et la possibilité de partager vos expériences sur les réseaux sociaux,
+  BuddyMap est l'outil ultime pour profiter pleinement de vos moments entre amis et renforcer les liens sociaux.",
+  key_features: [
+    "Géolocalisation individuelle et collective pour suivre les membres du groupe",
+    "Création de groupes et de sous-groupes basés sur des couleurs pour une organisation optimale",
+    "Définition de points de rendez-vous pour faciliter les retrouvailles",
+    "Notifications en temps réel sur les mouvements des membres du groupe",
+    "Partage de l'expérience et des moments clés sur les réseaux sociaux",
+    "Fonction de chat intégrée pour communiquer avec les membres du groupe",
+  ],
+  photo: "https://cdn.midjourney.com/028564eb-74a7-4904-8e43-175e9703949a/grid_0.png",
+  date: Date.parse("2023-11-17"),
+  importance: 7,
+  adjectiv: "beta",
+  repo_url: "https://github.com/Threbor/Swappy",
+  app_link: "https://www.swappy.site",
+)
+puts(" - done")
+
+
+print("Creating project SmartEscape")
+smartescape = Project.create(
+  name: "SmartEscape",
+  description: "En développement...EscapeSmart vous plonge dans des aventures captivantes à résoudre.",
+  description_enhanced: "
+  En cours de développement, EscapeSmart est un escape game innovant et accessible sur smartphone, conçu pour offrir
+  des expériences immersives, stimulantes et palpitantes à portée de main. Grâce à une combinaison astucieuse de
+  géolocalisation, de jeux de piste et d'énigmes ingénieuses, les utilisateurs pourront se lancer dans des aventures
+  en solo ou en équipe, relever des défis personnalisés et partager leurs réussites sur les réseaux sociaux, le tout
+  pour vivre une expérience de jeu unique et inoubliable.",
+  key_features: [
+    "Jeux d'évasion adaptés pour les smartphones",
+    "Géolocalisation individuelle et collective pour coordonner les équipes",
+    "Création de groupes et de sous-groupes pour des défis personnalisés",
+    "Jeux de piste basés sur la définition de points de rendez-vous et d'énigmes à résoudre",
+    "Classements et récompenses pour les équipes les plus performantes",
+    "Partage des réussites et des moments forts sur les réseaux sociaux",
+  ],
+  photo: "https://cdn.midjourney.com/025764bc-032e-4e9c-bbfd-1fc95fba8e6d/grid_0.png",
+  date: Date.parse("2023-12-17"),
+  importance: 8,
+  adjectiv: "beta",
+  repo_url: "https://github.com/Threbor/Swappy",
+  app_link: "https://www.swappy.site",
+)
+puts(" - done")
+
+
 print("Creating project DéputéScope")
 deputescope = Project.create(
   name: "DéputéScope",
@@ -341,13 +315,38 @@ deputescope = Project.create(
   photo: "https://cdn.midjourney.com/d470b33c-f675-406a-96ce-2e6017a85c33/grid_0.png",
   date: Date.parse("2023-12-17"),
   importance: 9,
-  adjectiv: "perso",
+  adjectiv: "beta",
   repo_url: "https://github.com/Threbor/Swappy",
   app_link: "https://www.swappy.site",
 )
 puts(" - done")
 
-
+print("Creating project ProgrammPlanner")
+programmplanner = Project.create(
+  name: "PlanPerfect",
+  description: "En développement... Un outil pour organiser les activités en fonction des préférences de chacun, idéal pour coordonner des agendas complexes.",
+  description_enhanced: "
+  PlanPerfect est un outil en développement qui vise à faciliter la coordination des agendas complexes en permettant
+  la création et la personnalisation de son propre agenda, le partage d'agenda avec les amis, la centralisation des
+  plannings des amis pour une meilleure visibilité, une interface visuelle intuitive et claire pour une prise en
+  main facile, ainsi que la suggestion d'activités en fonction des préférences et disponibilités. ProgrammPlanner
+  sera une solution pratique pour organiser et planifier des activités en tenant compte des envies de chacun,
+  facilitant ainsi la coordination d'agendas compliqués avec une grande simplicité et efficacité.",
+  key_features: [
+    "Création et personnalisation de son propre agenda",
+    "Partage d'agenda avec les amis pour faciliter la coordination",
+    "Centralisation des plannings des amis pour une meilleure visibilité",
+    "Interface visuelle intuitive et claire pour une prise en main facile",
+    "Suggestion d'activités en fonction des préférences et disponibilités",
+  ],
+  photo: "https://cdn.midjourney.com/7393568b-276d-4ad6-b951-a7e609be5a41/grid_0.png",
+  date: Date.parse("2023-07-17"),
+  importance: 3,
+  adjectiv: "beta",
+  repo_url: "https://github.com/Threbor/Swappy",
+  app_link: "https://www.swappy.site",
+)
+puts(" - done")
 
 print("Creating Technologies")
 

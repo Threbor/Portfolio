@@ -21,14 +21,16 @@
       <i class="fa-brands fa-github icon_project"></i>
     <% end %>
     <%= link_to @project.app_link, target: "_blank" do %>
-      <p>L'app </p>
+      <div class="app_link">
+        <p>L'app </p>
+      </div>
     <% end %>
   </div>
   <div class="description_enhanced_project">
     <p><%= @project.description_enhanced %></p>
   </div>
   <div class="key_features_project">
-  <h3>Les fonctionnalités clés :</h3>
+    <h2>Les fonctionnalités clés</h2>
     <ul>
       <% @project.key_features.each do |key_feature| %>
         <li><%= key_feature %></li>
@@ -36,7 +38,7 @@
     </ul>
   </div>
 
-  <h3>Les technologies utilisées :</h3>
+  <h2>Les technologies utilisées</h2>
   <div class="cards_tech">
       <% @project.technologies.each do |technology| %>
         <div class="card-category_tech" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%=technology.photo%>)">

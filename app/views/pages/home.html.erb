@@ -73,6 +73,9 @@
 <div class="cv-page-container">
   <div class="photo-contacts">
     <div class="photo">
+      <%= link_to ("https://youtu.be/vHHCFiA7uEo?t=1650"), target:"_blank" do %>
+        <i class="fa-brands fa-youtube"></i>
+      <% end %>
     </div>
     <div class="contacts">
       <div class="contacts-icons">
@@ -84,15 +87,19 @@
       <% end %>
       </div>
       <div class="contacts-text" id="contact_message">
-        <h3><i class="fa-solid fa-envelope-open-text"></i> Contactez-moi dès maintenant </h3>
-        <p>Confiez-moi vos idées et besoins, et concrétisons ensemble votre vision. Discutons rapidement de la manière dont je peux vous aider et bénéficier d'un accompagnement personnalisé.</p>
+        <%= link_to ("mailto:hugorobert.dev@gmail.com") do %>
+          <h3><i class="fa-solid fa-envelope-open-text"></i> Contactez-moi dès maintenant </h3>
+          <p>Confiez-moi vos idées et besoins, et concrétisons ensemble votre vision. Discutons rapidement de la manière dont je peux vous aider et bénéficier d'un accompagnement personnalisé.</p>
+        <% end %>
       </div>
     </div>
   </div>
   <div class="cv">
     <div class="containter_cv">
       <div class="cv-title">
-        <h1>Développeur Full-Stack</h1>
+        <h1><I>Curriculum vitæ</I></h1>
+        <h2>Hugo ROBERT</h2>
+        <h2>Développeur Full-Stack</h2>
         <h2>Ruby on Rails</h2>
       </div>
       <div class="cv-text">
@@ -151,11 +158,12 @@
         <h5>Institut de Préparation à l’Adminstration Générale de Nantes</h5>
         <h6>2020 - 2021, Nantes</h6>
       </div>
-      <div class="icon-download">
         <%= link_to ('https://drive.google.com/file/d/1frmtOlmWkujaIgKt0H1rcj5iASL3InSl/view?usp=sharing'), target:'_blank' do %>
+      <div class="icon-download">
           <i class="fa-solid fa-download"></i>
-        <% end %>
+        <p>Télécharger le CV</p>
       </div>
+        <% end %>
     </div>
   </div>
 </div>
