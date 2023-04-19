@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   resources :projects, only: [:show]
+  get "contact_forms", to: "contact_forms#index"
 end
